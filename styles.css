@@ -1,0 +1,805 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+  padding: 10px 20px;
+  background-color: #f8f9fa; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-holder {
+  display: flex;
+  align-items: center;
+}
+
+.logo-holder img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-holder span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap primary color */
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0056b3; /* Darker primary color for hover effect */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown button:hover {
+  color: #0056b3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: auto;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button, .btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  padding: auto;
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #565e64;
+}
+/*2nd*/
+/* Styling for the sub-nav */
+
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sub-nav a {
+  text-decoration: none;
+  color: #007bff; /* Bootstrap primary color */
+  margin-right: 15px;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.sub-nav a:hover {
+  color: #0056b3;
+  background-color: #e9ecef;
+  border-radius: 4px;
+}
+
+.sub-nav .active {
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+.flex-grow-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon-book-open {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #6c757d; /* Secondary color */
+}
+
+.show-from-tablet-landscape {
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* @media (max-width: 768px) {
+  .show-from-tablet-landscape {
+    display: none;
+  }
+
+  .hide-from-tablet-landscape {
+    display: inline;
+  }
+} */
+
+.hide-from-tablet-landscape {
+  display: none;
+}
+
+/* Show only on smaller screens */
+@media (max-width: 767px) {
+  .hide-from-tablet-landscape {
+    display: inline; 
+  }
+}
+
+/* 3rd*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card-large {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding: 16px;
+  margin: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.company-links a {
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.company-ratios ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.company-ratios li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 0.05px;
+}
+
+
+
+/*4th*/
+.flex {
+  border-radius: #007bff;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.pros, .cons {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 48%; /* Make sure sections take up half of the container width */
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 4px 0;
+}
+
+
+/*pros*/
+.has-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  bottom: 100%; /* Position it above the element */
+  left: 50%;
+  margin-left: -100px;
+}
+
+.has-tooltip:hover .tooltip {
+  visibility: visible;
+}
+
+/*profit loss*/
+/* General styling */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card-large {
+  padding: 20px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-gap-16 {
+  gap: 16px;
+}
+
+.responsive-holder {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.data-table .stripe {
+  background-color: #f9f9f9;
+}
+
+.text {
+  text-align: center;
+}
+
+.text strong {
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 0.875rem;
+  color: #666;
+}
+/* Extend existing styles for additional rows */
+.data-table th,
+.data-table td {
+    padding: 10px; 
+}
+
+.stripe:nth-child(odd) {
+    background-color: #f4f4f4; 
+}
+
+.text {
+    text-align: center;
+}
+
+.text strong {
+    font-weight: bold;
+}
+
+.sub {
+    font-size: 0.875rem;
+    color: #666;
+}
+/* Extend existing styles for additional rows */
+.data-table th,
+.data-table td {
+    padding: 10px;
+}
+
+.stripe:nth-child(odd) {
+    background-color: #f4f4f4; 
+}
+
+.text {
+    text-align: center;
+}
+
+.text strong {
+    font-weight: bold;
+}
+
+.sub {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/*compound */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.ranges-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ranges-table th, .ranges-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ranges-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.d-flex > * {
+  flex: 1 1 calc(25% - 1rem);
+}
+
+
+/*balance sheet*/
+
+/* Styling for the balance sheet section */
+
+
+section #balance-sheet {
+  padding: 16px;
+  border: 1px solid #ddd;
+  margin: 116px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border-radius:10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.card-large {
+  padding: 20px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-gap-8 {
+  gap: 8px;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-gap-16 {
+  gap: 16px;
+}
+
+.fill-card-width {
+  width: 100%;
+}
+
+.responsive-text-nowrap {
+  white-space: nowrap;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px; /* Increased padding */
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f2f2f2;
+}
+
+.stripe {
+  background-color: #f9f9f9;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.text {
+  width: 200px;
+}
+
+.button-plain {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button-small {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.button-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+
+
+/*cashflows*/
+
+/* CSS */
+section #cash-flow {
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card-large {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.flex-gap-16 {
+  gap: 16px;
+}
+
+.flex-gap-8 {
+  gap: 8px;
+}
+
+.responsive-holder {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.data-table th.text,
+.data-table td.text {
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-table .stripe {
+  background-color: #f9f9f9;
+}
+
+.data-table .strong {
+  font-weight: bold;
+}
+
+.button-plain {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ratios*/
+
+/* CSS */
+section #ratios {
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.card-large {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.flex-gap-16 {
+  gap: 16px;
+}
+
+.flex-gap-8 {
+  gap: 8px;
+}
+
+.responsive-holder {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.data-table th.text,
+.data-table td.text {
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-table .stripe {
+  background-color: #f9f9f9;
+}
+
+.data-table .strong {
+  font-weight: bold;
+}
+
+
+/*documents*/
+
+section #documents {
+  padding: auto;
+  margin: 16px;
+}
+
+.card-large {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.ink-600 {
+  color: #666;
+}
+
+.list-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-links li {
+  margin-bottom: 8px;
+}
+
+.show-more-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.show-more-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.icon-down {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.icon-down.ink-600 {
+  color: #666;
+}
+
+.show-more-button[aria-expanded="true"] .icon-down {
+  transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
