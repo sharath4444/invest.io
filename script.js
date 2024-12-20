@@ -45,3 +45,25 @@ function toggleDropdown(event) {
         });
     });
 });
+
+
+function setTheme(theme) {
+  const body = document.body;
+
+  body.classList.remove('dark-theme');
+  body.classList.remove('light-theme');
+
+  if (theme === 'dark') {
+    body.classList.add('dark-theme');
+  } else if (theme === 'light') {
+    body.classList.add('light-theme');
+  }
+
+  localStorage.setItem('theme', theme);
+}
+
+window.onload = function() {
+  const savedTheme = localStorage.getItem('theme') || 'light'; // Default to light theme
+  setTheme(savedTheme);
+};
+

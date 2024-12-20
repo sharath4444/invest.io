@@ -1,7 +1,43 @@
+:root {
+  --bg-light: #ffffff;
+  --text-light: #000000;
+  --link-light: #007bff;
+
+  --bg-dark: #121212;
+  --text-dark: #ffffff;
+  --link-dark: #1e90ff;
+}
+
+body section {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.dark-mode  {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+a {
+  color: var(--link-light);
+}
+
+body.dark-mode a {
+  color: var(--link-dark);
+}
+
+
+
 /* General Styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+body.dark-mode  {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
 }
 
 .container-fluid {
@@ -25,7 +61,7 @@ body {
 .logo-holder span {
   font-weight: bold;
   font-size: 20px;
-  color: #333;
+  color: #b1a4a4;
 }
 
 nav {
@@ -36,7 +72,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #007bff; /* Bootstrap primary color */
+  color: #6b8aac; /* Bootstrap primary color */
   font-size: 16px;
   padding: 5px 10px;
   transition: color 0.3s;
@@ -127,6 +163,7 @@ button, .btn {
 .btn-secondary:hover {
   background-color: #565e64;
 }
+
 /*2nd*/
 /* Styling for the sub-nav */
 
@@ -197,6 +234,7 @@ button, .btn {
     display: inline; 
   }
 }
+
 
 /* 3rd*/
 
@@ -776,6 +814,91 @@ section #documents {
 
 .show-more-button[aria-expanded="true"] .icon-down {
   transform: rotate(180deg);
+}
+
+
+
+/*footer*/
+
+#large-footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-column-tablet {
+  flex-direction: column;
+}
+
+.no-print {
+  display: block;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.items {
+  list-style: none;
+  padding: 0;
+}
+
+.items li {
+  margin-bottom: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.button-plain {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.red-heart {
+  color: red;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+a {
+  color: #007bff;
+}
+
+body.dark-theme {
+  background-color: #181818;
+  color: #f1f1f1;
+}
+
+body.dark-theme a {
+  color: #66b3ff;
 }
 
 
